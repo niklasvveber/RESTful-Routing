@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RESTful-Routing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>RESTful Routing</h1>
+          <p>A table of all 7 RESTful routes</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+        <table class="table table-bordered">
+          <tr class="active">
+            <td class="col-md-2"><b>Name</b></td>
+            <td class="col-md-3"><b>Path</b></td>
+            <td class="col-md-2"><b>HTTP Verb</b></td>
+            <td class="col-md-5"><b>Purpose</b></td>
+          </tr>
+          <tr class="info">
+            <td class="col-md-2">Index</td>
+            <td class="col-md-3">/entities</td>
+            <td class="col-md-2">GET</td>
+            <td class="col-md-5">List of entities</td>
+          </tr>
+          <tr class="success">
+            <td class="col-md-2">New</td>
+            <td class="col-md-3">/entities/new</td>
+            <td class="col-md-2">GET</td>
+            <td class="col-md-5">Show new entity form</td>
+          </tr>
+          <tr class="success">
+            <td class="col-md-2">Create</td>
+            <td class="col-md-3">/entities</td>
+            <td class="col-md-2">POST</td>
+            <td class="col-md-5">Create a new entity, the redirect somewhere</td>
+          </tr>
+          <tr class="info">
+            <td class="col-md-2">Show</td>
+            <td class="col-md-3">/entities/:id</td>
+            <td class="col-md-2">GET</td>
+            <td class="col-md-5">Show info about one specific entity</td>
+          </tr>
+          <tr class="warning">
+            <td class="col-md-2">Edit</td>
+            <td class="col-md-3">/entities/:id/edit</td>
+            <td class="col-md-2">GET</td>
+            <td class="col-md-5">Show edit form for one entity</td>
+          </tr>
+          <tr class="warning">
+            <td class="col-md-2">Update</td>
+            <td class="col-md-3">/entities/:id</td>
+            <td class="col-md-2">PUT</td>
+            <td class="col-md-5">Update a particular entity, then redirect somewhere</td>
+          </tr>
+          <tr class="danger">
+            <td class="col-md-2">Destroy</td>
+            <td class="col-md-3">/entities/:id</td>
+            <td class="col-md-2">DELETE</td>
+            <td class="col-md-5">Delete a particular entity, then redirect somewhere</td>
+          </tr>
+        </table>
+    </div>
+
+    <footer>
+      <div class="container">
+        <hr>
+      </div>
+    </footer>
+
+  </body>
+</html>
